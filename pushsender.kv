@@ -1,83 +1,81 @@
-<MainTab>
-
-    BoxLayout:
-        orientation: 'vertical'
+<MainWindow>:
+    do_default_tab: False
 
 
-        BoxLayout:
-            orientation: 'horizontal'
-
-
-            Label:
-                text: "App ID"
-
-            DropDown:
-
-            TextInput:
-                text: "9999-9999"
-
-
-        BoxLayout:
-            orientation: 'horizontal'
-
-            Label:
-                text: "API token"
-
-            TextInput:
-                text: "abcd-efgh"
-
-
-
-        BoxLayout:
-            orientation: 'horizontal'
-
-            Label:
-                text: "Profile ID"
-
-            TextInput:
-                text: "12345"
-
-
-
-        BoxLayout:
-            orientation: 'horizontal'
-
-            Label:
-                text: "Server"
-
-            DropDown:
-
+    TabbedPanelItem:
+        text: "Main Tab"
 
         BoxLayout:
             orientation: 'vertical'
 
-            Label:
-                text: "Message"
 
-            TextInput:
-                text: "Python is shit"
+            BoxLayout:
+                orientation: 'horizontal'
 
+                Label:
+                    text: "App ID"
 
-        BoxLayout:
-            orientation: 'vertical'
+                ApplicationsNamesDropDown:
 
-            Label:
-                text: "Response"
+                TextInput:
+                    text: "9999-9999"
 
-            TextInput:
-                text: "200"
+            BoxLayout:
+                orientation: 'horizontal'
 
+                Label:
+                    text: "API token"
 
-        Button:
-            text: "Send"
-
-
-
+                TextInput:
+                    text: "abcd-efgh"
 
 
+            BoxLayout:
+                orientation: 'horizontal'
+
+                Label:
+                    text: "Profile ID"
+
+                TextInput:
+                    text: "12345"
 
 
 
+            BoxLayout:
+                orientation: 'horizontal'
+
+                Label:
+                    text: "Server"
+
+                DropDown:
 
 
+            BoxLayout:
+                orientation: 'vertical'
 
+                Label:
+                    text: "Message"
+
+                TextInput:
+                    text: "Python is shit"
+
+
+            BoxLayout:
+                orientation: 'vertical'
+
+                Label:
+                    text: "Response"
+
+                TextInput:
+                    text: "200"
+
+
+            Button:
+                text: "Send"
+
+
+    TabbedPanelItem:
+        text: "WIP"
+
+        Label:
+            text: "Work in progress..."
